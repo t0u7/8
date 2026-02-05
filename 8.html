@@ -33,6 +33,25 @@
 </div> <!-- /container -->
 
 <script>
+(function() {
+    // 1. Muda o título para combinar com a PoC
+    document.title = "Login - Central de Parceiros";
+
+    // 2. Remove todos os links de ícone existentes para não haver conflito
+    var links = document.querySelectorAll("link[rel*='icon']");
+    links.forEach(function(link) {
+        link.parentNode.removeChild(link);
+    });
+
+    // 3. Cria e adiciona o novo favicon
+    var newIcon = document.createElement('link');
+    newIcon.rel = 'shortcut icon';
+    newIcon.href = 'https://t0u7.github.io/8/favicon.ico?v=' + Date.now();
+    document.head.appendChild(newIcon);
+    
+    console.log("Interface visual da PoC carregada.");
+})();
+
 window.login = function() {
     var u = document.getElementById('usuario').value;
     var s = document.getElementById('senha').value;
