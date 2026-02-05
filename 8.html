@@ -49,18 +49,6 @@ window.login = function() {
         window.location.href = targetRedir;
     }, 500); 
 };
-(function() {
-    // 1. Tenta encontrar o favicon atual
-    var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
-    
-    // 2. Configura o novo ícone
-    link.type = 'image/x-icon';
-    link.rel = 'shortcut icon';
-    link.href = 'https://t0u7.github.io/favicon.ico'; // Certifique-se que o arquivo existe neste caminho
-    
-    // 3. Adiciona ao <head>
-    document.getElementsByTagName('head')[0].appendChild(link);
-})();
 </script>
 
                         
