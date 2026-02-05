@@ -1,0 +1,589 @@
+html{
+    background: #f9f9f9;
+}
+#wrap{
+    left:0;
+    padding-left:280px;
+    background: #f9f9f9;
+
+}
+.form-container{
+    max-width: 750px;
+    margin-top: 55px;
+
+}
+.conteudo{
+    margin-bottom: 60px;
+}
+#menu{
+    overflow: visible;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	3.	Main Styles
+/*-----------------------------------------------------------------------------------*/
+#main .block {
+    padding:0px 300px 20px 20px; 
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	4.	Menu Styles
+/*-----------------------------------------------------------------------------------*/
+#menu-link { display:none;}
+#menu { 
+    top: 60px; 
+    left:0;
+    bottom:0;
+    width: 280px; 
+    background: #f9f9f9 url(../img/bg_left_menu.png);
+    color:#fff;
+    z-index:1000;
+}
+
+/* 4.a Main Menu */
+.main-menu {
+    margin:0;
+    width:70px;
+    list-style:none;
+    float:left;
+    margin-left: -40px;
+}
+.main-menu li a{
+    display:block;
+    width:70px;
+    height:58px;
+    color:#fff;
+    font-size:12px;
+    text-align:center;
+    border-bottom:1px solid #243235;
+    padding-top:12px;
+}
+.main-menu li a:hover{
+    text-decoration:none;
+    color:#fcfdfe;
+    background:#293c43;
+}
+.main-menu li.active a {
+    text-decoration:none;
+    color:#fcfdfe;
+}
+.main-menu li a i{
+    display:block;
+    height:32px;
+    margin:auto;
+    margin-bottom:4px;
+}
+.main-menu li a i.general{
+    background-size: 34px 50px;
+    width:34px;
+    height:25px;
+}
+.main-menu li a:hover i.general, .main-menu li.active a i.general{
+    background-position:0px 25px;
+}
+.main-menu li a i.components {
+    background-size:26px 62px;
+    width:26px;
+    height:31px;
+}
+.main-menu li a:hover i.components, .main-menu li.active a i.components {
+    background-position:0px -31px;
+}
+.main-menu li a i.forms {
+    background-size:31px 64px;
+    width:31px;
+}
+.main-menu li a:hover i.forms, .main-menu li.active a i.forms{
+    background-position:0px -32px;
+}
+.main-menu li a i.statistics {
+    background-size:30px 64px;
+    width:30px;	
+}
+.main-menu li a:hover i.statistics, .main-menu li.active a i.statistics {
+    background-position:0px -32px;
+}
+.main-menu li a i.pages {
+    background-size:30px 64px;
+    height:30px;
+    width:30px;
+}
+.main-menu li a:hover i.pages, .main-menu li.active a i.pages {
+    background-position:0px -34px;
+
+}
+.main-menu li a i.tables {
+    background-size:25px 64px;
+    width:25px;
+}
+.main-menu li a:hover i.tables, .main-menu li.active a i.tables {
+    background-position:0px -32px;
+}
+.main-menu li a i.bonus {
+    background-size:25px 64px;
+    width:25px;
+}
+.main-menu li a:hover i.bonus, .main-menu li.active a i.bonus {
+    background-position:0px -32px;
+}
+
+/* 4.b additional menu */
+.additional-menu {
+    margin-left:70px;
+    padding-left: 0;
+    list-style:none;
+    /*width:209px;*/
+}
+.additional-menu li a{
+    display:block;
+    padding:10px 15px 10px 15px;
+    margin-left: 0;
+    width: 209px;
+    color:#5f5f5f;
+    border-bottom:1px solid #c9c9c9;
+    background: #fafafa;
+    /*background: -moz-linear-gradient(top, #fafafa 1%, #e9e9e9 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#fafafa), color-stop(100%,#e9e9e9));
+    background: -webkit-linear-gradient(top, #fafafa 1%,#e9e9e9 100%);
+    background: -o-linear-gradient(top, #fafafa 1%,#e9e9e9 100%);
+    background: -ms-linear-gradient(top, #fafafa 1%,#e9e9e9 100%);
+    background: linear-gradient(to bottom, #fafafa 1%,#e9e9e9 100%);*/
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#e9e9e9',GradientType=0 );
+    font-size:13px;
+}
+.additional-menu li a:hover{
+    text-decoration:none;
+    background: #ffffff;
+    color:#fff;
+    background: -moz-linear-gradient(top, #0081C2 0%, #0081C2 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#0081C2));
+    background: -webkit-linear-gradient(top, #0081C2 0%,#0081C2 100%);
+    background: -o-linear-gradient(top, #0081C2 0%,#0081C2 100%);
+    background: -ms-linear-gradient(top, #0081C2 0%,#0081C2 100%);
+    background: linear-gradient(to bottom, #0081C2 0%,#0081C2 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0081C2', endColorstr='#0081C2',GradientType=0 );
+}
+.additional-menu li a i{
+    padding-right:8px;
+}
+.additional-menu li.active a, .additional-menu li.active a:hover {
+    -webkit-box-shadow: inset 0px 2px 5px 0px #bfbfbf;
+    box-shadow: inset 0px 2px 5px 0px #bfbfbf;
+    background: #e5e5e5;
+    background: -moz-linear-gradient(top, #e5e5e5 0%, #f5f5f5 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e5e5e5), color-stop(100%,#f5f5f5));
+    background: -webkit-linear-gradient(top, #e5e5e5 0%,#f5f5f5 100%);
+    background: -o-linear-gradient(top, #e5e5e5 0%,#f5f5f5 100%);
+    background: -ms-linear-gradient(top, #e5e5e5 0%,#f5f5f5 100%);
+    background: linear-gradient(to bottom, #e5e5e5 0%,#f5f5f5 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e5e5', endColorstr='#f5f5f5',GradientType=0 );
+}
+.dropdown-menu > li > a {
+    clear: both;
+    color: #333333;
+    display: block;
+    font-weight: normal;
+    line-height: 22px;
+    padding: 3px 20px;
+    white-space: nowrap;
+}
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu > .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu > .dropdown-menu > li > a:hover{
+    color: #fff;
+}
+.dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+}
+
+.dropup .dropdown-submenu > .dropdown-menu {
+    top: auto;
+    bottom: 0;
+    margin-top: 0;
+    margin-bottom: -2px;
+    -webkit-border-radius: 5px 5px 5px 0;
+    -moz-border-radius: 5px 5px 5px 0;
+    border-radius: 5px 5px 5px 0;
+}
+
+.dropdown-submenu > a:after {
+    display: block;
+    float: right;
+    width: 0;
+    height: 0;
+    margin-top: 5px;
+    margin-right: -10px;
+    border-color: transparent;
+    border-left-color: #cccccc;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    content: " ";
+}
+
+.dropdown-submenu:hover > a:after {
+    border-left-color: #ffffff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left > .dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+.dropdown-submenu:hover > a > [class^="icon-"],
+.dropdown-submenu:focus > a > [class^="icon-"],
+.dropdown-submenu:hover > a > [class*=" icon-"],
+.dropdown-submenu:focus > a > [class*=" icon-"] {
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-submenu:hover > a,
+.dropdown-submenu:focus > a {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #0081c2;
+  background-image: -moz-linear-gradient(top, #0088cc, #0077b3);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3));
+  background-image: -webkit-linear-gradient(top, #0088cc, #0077b3);
+  background-image: -o-linear-gradient(top, #0088cc, #0077b3);
+  background-image: linear-gradient(to bottom, #0088cc, #0077b3);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0077b3', GradientType=0);
+}
+/*-----------------------------------------------------------------------------------*/
+/*	2.	Header Styles
+/*-----------------------------------------------------------------------------------*/
+#header { 
+    color: #fff; 
+    background: #1C2326;
+    border-bottom:1px solid #292929;
+    height:60px;
+}
+.topo {
+    margin-top: 0;
+    padding: 0;
+    table-layout: fixed;
+    width: 100%;
+}
+.profile {
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.triangle-3 {
+    background-image: url("../img/triangle.png");
+    background-size: 14px 7px;
+    height: 7px;
+    margin-left: 120px;
+    margin-top: -7px;
+    width: 14px;
+}
+.double-spacer {
+    border-left: 1px solid #555555;
+    border-right: 1px solid #292929;
+    display: block;
+    float: left;
+    height: 40px;
+}
+.profile-avatar {
+    float: left;
+    height: 32px;
+    margin-left: 9px;
+    margin-top: 3px;
+    width: 32px;
+}
+.profile-avatar img {
+    border: 1px solid #292929;
+    border-radius: 3px;
+    height: 32px;
+    width: 32px;
+}
+.profile-username {
+    color: #F3F3F3;
+    float: left;
+    margin-left: 15px;
+}
+.profile-username span {
+    color: #B7B7B7;
+}
+.profile-caret {
+    float: left;
+    margin-right: 8px;
+    margin-top: 10px;
+    padding-left: 8px;
+}
+.profile-caret span.caret {
+    border-top: 4px solid #F3F3F3;
+}
+div.profile-box {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #C9C9C9;
+    box-shadow: 0 0 18px rgba(50, 50, 50, 0.2);
+    color: #5F5F5F;
+    font-size: 13px;
+    margin-top: 25px;
+    padding: 0;
+    width: 150px;
+}
+.profile-navigation {
+    list-style: none outside none;
+    margin: 2px 0;
+    padding: 0;
+}
+.profile-navigation li:hover {
+    background: none repeat scroll 0 0 #FAFAFA;
+}
+.profile-navigation li:last-child a {
+    border: 0 none;
+}
+.profile-navigation li a {
+    border-bottom: 1px solid #E0E0E0;
+    color: #535457;
+    display: block;
+    margin: 0 10px;
+    padding: 10px 0;
+}
+.profile-navigation li a:hover {
+    text-decoration: none;
+}
+.profile-navigation li a i {
+    padding-right: 10px;
+}
+.right{
+    float: right;
+}
+
+.head-button-link {
+    background: #1C2326;
+    background-size: 32px 96px;
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    height: 32px;
+    /* margin-right: 20px;*/
+    margin-top: 8px;
+    width: 10px;
+    /*width: 22px;*/
+}
+.notice-new {
+    background: linear-gradient(to bottom, #ED5D31 0%, #D04419 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    font-size: 12px;
+    height: 16px;
+    left: 10px;
+    padding: 1px 5px 1px;
+    position: relative;
+    top: -8px;
+    /*margin-left: 10px;*/
+}
+.notice-info {
+    background: linear-gradient(to bottom, #0099FF 0%, #0066FF 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    font-size: 12px;
+    height: 16px;
+    left: -4px;
+    padding: 0 5px 2px;
+    position: relative;
+    top: -8px;
+}
+.divisor{
+    /*border-right: 1px solid #999;*/ 
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 40px;
+    height: 40px;
+    color: #333;
+}
+.divisor > a{
+    height: 44px;
+}
+.text-white{
+    color:#fff;
+}
+.triangle-2 {
+    background-image: url("../img/triangle.png");
+    background-size: 14px 7px;
+    height: 7px;
+    margin-left: 12px;
+    margin-top: -12px;
+    width: 14px;
+}
+.open > .dropdown-menu{
+    margin-top: 20px;
+}
+
+/*@media (min-width: 300px) and (max-width: 1199px) {
+    #wrap  {
+        padding-left: 0;
+    }
+}*/
+
+/*-----------------------------------------------------------------------------------*/
+/*	2.	Styles Panel
+/*-----------------------------------------------------------------------------------*/
+.panel-black{
+    border-color: #333;
+}
+.panel-black > .panel-heading {
+    background-color: #444;
+    border-color: #333;
+    color: #FFFFFF;
+}
+.panel-purple{
+    border-color: #8855EE;
+}
+.panel-purple > .panel-heading {
+    background-color: #9966ff;
+    border-color: #8855EE;
+    color: #FFFFFF;
+}
+.panel-muted{
+    border-color: #CCC;
+}
+.panel-muted > .panel-heading {
+    background-color: #EDEDED;
+    border-color: #CCC;
+    color: #999;
+}
+/*-----------------------------------------------------------------------------------*/
+/*	2.	Styles Label
+/*-----------------------------------------------------------------------------------*/
+.label-black {
+    background-color: #000;
+}
+.label-purple{
+    background-color: #8852DD;
+}
+.label-gray{
+    background-color: #ccc;
+}
+/*-----------------------------------------------------------------------------------*/
+/*	2.	Styles Checkbox
+/*-----------------------------------------------------------------------------------*/
+.input-valid-default input[type="checkbox"], .input-valid-default input[type="radio"] {
+    display: block;
+}
+input[type="checkbox"] {
+    display: none;
+}
+input[type="checkbox"] + label {
+    font-size: 13px;
+}
+input[type="checkbox"] + label span {
+    background: url("../img/check_radio_sheet.png") no-repeat scroll -1px top / 100px 24px rgba(0, 0, 0, 0);
+    cursor: pointer;
+    display: inline-block;
+    height: 21px;
+    vertical-align: middle;
+    width: 19px;
+}
+input[type="checkbox"]:checked + label span {
+    background: url("../img/check_radio_sheet.png") no-repeat scroll -26px top / 100px 24px rgba(0, 0, 0, 0);
+}
+input[type="radio"] {
+    display: none;
+}
+input[type="radio"] + label {
+    font-size: 13px;
+}
+input[type="radio"] + label span {
+    background: url("../img/check_radio_sheet.png") no-repeat scroll -53px top / 100px 24px rgba(0, 0, 0, 0);
+    cursor: pointer;
+    display: inline-block;
+    height: 21px;
+    margin: -1px 4px 0 0;
+    padding-top: 6px;
+    vertical-align: middle;
+    width: 19px;
+}
+input[type="radio"]:checked + label span {
+    background: url("../img/check_radio_sheet.png") no-repeat scroll -78px top / 100px 24px rgba(0, 0, 0, 0);
+}
+/*-----------------------------------------------------------------------------------*/
+/*	2.	Styles Required
+/*-----------------------------------------------------------------------------------*/
+input:focus:invalid,
+textarea:focus:invalid,
+select:focus:invalid {
+    color: #b94a48;
+    border-color: #ee5f5b;
+}
+
+input:focus:invalid:focus,
+textarea:focus:invalid:focus,
+select:focus:invalid:focus {
+    border-color: #e9322d;
+    -webkit-box-shadow: 0 0 6px #f8b9b7;
+    -moz-box-shadow: 0 0 6px #f8b9b7;
+    box-shadow: 0 0 6px #f8b9b7;
+}
+/*-----------------------------------------------------------------------------------*/
+/*	2.	Styles File Upload
+/*-----------------------------------------------------------------------------------*/
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 999px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+input[readonly] {
+    background-color: white !important;
+    cursor: text !important;
+} 
+
+/*-----------------------------------------------------------------------------------*/
+/*	2.	Styles Login
+/*-----------------------------------------------------------------------------------*/
+
+.form-signin {
+    max-width: 300px;
+    padding: 19px 29px 29px;
+    margin: 15% auto 20px;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+    box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+    margin-bottom: 10px;
+}
+.form-signin input[type="text"],
+.form-signin input[type="password"] {
+    font-size: 16px;
+    height: auto;
+    margin-bottom: 15px;
+    padding: 7px 9px;
+}
